@@ -41,6 +41,9 @@ Default sources are located in:
 
 * `/var/log/mpd.log` - Log file of volumio with last actions. **This empties on reboot**
 
+### Where is my library? 
+If you are using a network connected library (e.g. nfs/NAS), your library is likely mounted in `/mnt/NAS/`. This script needs access to your library to pull ID3 metadata for the tracks it finds in `mpd.log`. 
+
 # Automating
 
 Cron is a nice easy way to schedule runs/updates. This is no longer installed in Volumio by default. To add it:
