@@ -17,7 +17,7 @@ and install the dependencies.
 
 * `python3` which can be installed using the command `sudo apt-get install python3` on volumio 2 (you may need to `sudo apt-get update` first)
 * `pip3` which can be installed using `sudo apt-get install python3-pip`
-* `mutagen` ID3 module for reading the ID3 tags which can be installed using `pip3 install mutagen`
+* `mutagen` ID3 module for reading the ID3 tags which can be installed using `sudo pip3 install mutagen`
 
 ## Usage
 move into the cloned directory: `cd lastsong`
