@@ -146,7 +146,7 @@ pattern= ': added'
 if results.oneplst:
     daysback = 28 # If the single playlist flag is added , look multiple days back. (make command line parameter?
 else:
-    daysback = 1 
+    daysback = datetime.datetime.today().weekday() + 1
 for i in range(daysback):
     dates.append((datetime.datetime.today()-datetime.timedelta(days=i)).strftime('%h %d'))
 
@@ -165,7 +165,7 @@ print(data)
 if results.oneplst:
  plstname=results.pldir +'RecentlyAdded'
 else:
- plstname=results.pldir + week(wn)
+ plstname=results.pldir + 'New Tracks: Week of ' + (datetime.datetime.today()-datetime.timedelta(days=datetime.datetime.today().weekday())).strftime('%Y-%m-%d')
 
 o = open(plstname, encoding='utf-8', mode='w')
 o.write('[')
